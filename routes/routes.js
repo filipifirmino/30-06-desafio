@@ -16,7 +16,7 @@ app.post("/:id/ingredients", async (req, res) => {
       `${__dirname}/../data/data.json`,
       JSON.stringify(newData)
     );
-    res.status(201).send({ message: "Adcionando com sucesso!" });
+    res.status(204).send({ message: "Adcionando com sucesso!" });
   } catch (err) {
     throw new Error(err);
   }
